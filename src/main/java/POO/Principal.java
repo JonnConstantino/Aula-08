@@ -23,5 +23,22 @@ public class Principal {
         System.out.println("Valor atual: " + c.getValorAtual());
 
         System.out.println("Valor atual: " + d.getValorAtual());
+
+        Batedeira planetaria = new Batedeira();
+
+        System.out.println();
+        System.out.println("Ligando batedeira...");
+        planetaria.setLigada(true);
+        System.out.println("Batedeira ligada!");
+
+        System.out.println();
+        System.out.println("Velocidade da batedeira: " + planetaria.getVelocidade() + " rpm");
+        System.out.println("Aumentando velocidade da batedeira em 10 rpm...");
+        planetaria.setVelocidade(10);
+        System.out.println("Velocidade da batedeira: " + planetaria.getVelocidade() + " rpm");
+
+        System.out.println();
+        System.out.println("Desligando batedeira...");
+        planetaria.setLigada(false);
     }
 }
